@@ -3,7 +3,8 @@
 		authenticationData,
 		isAuthenticated,
 		LoginRegisterManager,
-		logout
+		logout,
+		NotificationManager
 	} from 'boxfish-studio--is-ui-components';
 	import { Button, Container, Row } from 'sveltestrap';
 </script>
@@ -30,3 +31,4 @@
 		</Row>
 	{/if}
 </Container>
+<NotificationManager />

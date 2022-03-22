@@ -18,6 +18,7 @@
 		IdentityDetails,
 		isAsyncLoadingIdentities,
 		ListManager,
+		NotificationManager,
 		searchAllIdentities,
 		searchIdentitiesResults,
 		searchIdentityByDID,
@@ -274,3 +275,4 @@
 	onModalClose={closeCreateDeviceModal}
 	identitiesTemplate={DEVICE_TEMPLATE}
 />
+<NotificationManager />
