@@ -219,10 +219,10 @@
 		isCreateCredentialModalOpen = false;
 	}
 	function openCreateDeviceModal(): void {
-		isCreateCredentialModalOpen = true;
+		isCreateDeviceModalOpen = true;
 	}
 	function closeCreateDeviceModal(): void {
-		isCreateCredentialModalOpen = false;
+		isCreateDeviceModalOpen = false;
 	}
 </script>
 
@@ -271,6 +271,7 @@
 />
 <!-- Custom modal for devices -->
 <CreateIdentityModal
+	title="Create device"
 	isOpen={isCreateDeviceModalOpen}
 	onModalClose={closeCreateDeviceModal}
 	identitiesTemplate={DEVICE_TEMPLATE}
