@@ -30,6 +30,7 @@
   },
   "type": "module",
   "dependencies": {
-    "boxfish-studio--is-ui-components": "^0.0.31"
+    "@iota/is-client": "^0.1.2",
+    "@iota/is-ui-components": "^0.0.1"
   }
 }
