@@ -1,14 +1,14 @@
 <script lang="ts">
-	import type { IdentityJson } from 'boxfish-studio--iota-is-sdk';
-	import { UserType } from 'boxfish-studio--iota-is-sdk';
+	import type { IdentityJson } from '@iota/is-client';
+	import { UserType } from '@iota/is-client';
 	import type {
 		ActionButton,
 		ExtendedUser,
 		IdentityTemplate,
 		TableData
-	} from 'boxfish-studio--is-ui-components';
+	} from '@iota/is-ui-components';
 	import {
-		addIdentityToSearchResults,
+		addIdentityToSortedSearchResults,
 		ChannelMessages,
 		CreateCredentialModal,
 		CreateIdentityModal,
@@ -29,7 +29,7 @@
 		updateIdentityInSearchResults,
 		USER_ICONS,
 		WELCOME_LIST_RESULTS_NUMBER
-	} from 'boxfish-studio--is-ui-components';
+	} from '@iota/is-ui-components';
 	import { onDestroy, onMount } from 'svelte';
 	import { Container, Row } from 'sveltestrap';
 
@@ -187,7 +187,7 @@
 			await onSearch();
 		} else {
 			// Add the identity to the search results directly, no need to search again
-			await addIdentityToSearchResults(identity?.doc?.id);
+			await addIdentityToSortedSearchResults(identity?.doc?.id);
 		}
 		loading = false;
 	}

@@ -4,7 +4,7 @@
 		isAuthenticated,
 		LoginRegisterManager,
 		logout
-	} from 'boxfish-studio--is-ui-components';
+	} from '@iota/is-ui-components';
 	import { Button, Container, Row } from 'sveltestrap';
 </script>
 
